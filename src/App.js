@@ -7,6 +7,7 @@ import { BrowserRouter, Routes} from "react-router-dom";
 import { Route } from "react-router-dom";
 import Navbar from './Components/Navbar/Navbar';
 import Layout from './Components/Landing_Page/LandingPage';
+import InstantConsultation from './Components/InstantConsultation/InstantConsultation';
 
 // eslint-disable-next-line no-unused-vars
 import logo from './logo.svg';
@@ -19,7 +20,7 @@ function App() {
           <Navbar/>
               <Routes>
               <Route path="/" element={<Layout/>}/>
-             
+              <Route path="/instant-consultation" element={<InstantConsultation/>} />
               {/*<Route path="/Login" element={<Login/>}/>
               <Route path="/SignUp" element={<SignUp/>}/>
 // eslint-disable-next-line no-unused-vars
